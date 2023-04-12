@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th=http://www.thymeleaf.org>
+<head th:replace="layouts/layout2 :: head" />
+<style>
+  .sub-banner{
+    background: url(../images/slides/submenu/bible1.jpg) center center fixed no-repeat;
+  }
+  .sub-banner .container h2{
+  color:;
+  }
+</style>
+<body>
+
+<!-- Page Wrap -->
+<div id="wrap">
+  <div id="main-wrapper">
+    <header th:replace="layouts/layout2 :: header">
+    </header>
+
+
+
+    <!--======= ABOUT SECTION =========-->
+    <section class="sectoion-100px about">
+      <div class="container">
+        <!-- Tittle -->
+        <div class="tittle">
+          <h4>Add Diccionario</h4>
+          <form action="#" th:action="@{saveDiccionario}" th:object="${diccionario}" method="POST">
+
+            <div class="mb-3">
+              <label for="palabra" class="form-label">palabra</label>
+              <input type="text" th:field="*{palabra}" class="form-control" id="palabra">
+            </div>
+            <div class="mb-3">
+              <label for="definicion" class="form-label">definicion</label>
+              <input type="text" th:field="*{definicion}" class="form-control" id="definicion">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</div>
+<!-- Wrap End --> 
+
+<div th:replace="layouts/layout2 :: footer"></div>
+</body>
+</html>

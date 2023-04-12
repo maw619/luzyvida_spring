@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th=http://www.thymeleaf.org>
+<head th:replace="layouts/layout :: head" />
+<body>
+
+<!-- Page Wrap -->
+<div id="wrap">
+  <div id="main-wrapper">
+    <header th:replace="layouts/layout :: header">
+    </header>
+    
+    <!--======= HOME MAIN SLIDER =========-->
+    <section th:replace="layouts/layout :: slider">
+    </section>
+    
+
+  </div>
+</div>
+<!-- Wrap End --> 
+
+<div th:replace="layouts/layout :: footer"></div>
+</body>
+</html>
