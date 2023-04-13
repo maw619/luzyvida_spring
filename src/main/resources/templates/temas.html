@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head th:replace="~{fragments/header :: head}" />
+<body>
+
+
+<!--=================================
+	Header
+	=================================-->
+<header th:replace="~{fragments/header :: header}" />
+
+
+<!--=================================
+Vegas Slider Images
+=================================-->
+
+<ul class="vegas-slides hidden">
+    <li><img data-fade='2000' src="assets/img/BG/bg1.jpg" alt="" /></li>
+    <li><img data-fade='2000' src="assets/img/BG/bg2.jpg" alt="" /></li>
+    <li><img data-fade='2000' src="assets/img/BG/bg3.jpg" alt="" /></li>
+    <li><img data-fade='2000' src="assets/img/BG/bg4.jpg" alt="" /></li>
+</ul>
+
+<!--=================================
+JPlayer (Audio Player)
+=================================-->
+
+<section th:replace="fragments/player :: player" />
+
+<div id="ajaxArea">
+    <div class="pageContentArea">
+        <!--=================================
+        bread crums
+        =================================-->
+        <section class="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <h1>Diccionario</h1>
+                        <h5>...</h5>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+
+
+        <!--=================================
+        Upcoming events
+        =================================-->
+
+        <section id="blog">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <article class="latest-post" style="background:white; color:black">
+                            <img src="assets/img/dicc.jpg" alt="dummy">
+                            <h2><a style="color:black; margin-left:5px;" href="blog-detail.html">List</a></h2>
+                            <table class="table table-striped ml-4">
+                                <tr>
+                                    <th>v_Contenido</th>
+                                </tr>
+                                <tbody>
+                                <tr th:each="x : ${vers}">
+                                    <td th:text="${x.v_Contenido}"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </article><!--\\latest post-->
+
+                        <!--                          <div th:repace="fragments/pagination :: pagination" />-->
+                        <!--\\news feed btn-->
+
+                    </div><!--latest news-->
+
+
+
+                </div>
+            </div>
+        </section>
+    </div><!--pageContent-->
+</div><!--ajaxwrap-->
+<!--=================================
+	Latest blog
+	=================================-->
+
+
+<!--=================================
+	Footer
+	=================================-->
+<!--=================================
+	Footer
+	=================================-->
+<footer th:replace="~{fragments/footer :: footer}" />
+
+
+<!--=================================
+Script Source
+=================================-->
+
+<th:block th:replace="~{fragments/footer :: scripts}" ></th:block>
+
+</body>
+</html>

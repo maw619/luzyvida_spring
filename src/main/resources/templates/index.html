@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head th:replace="~{fragments/header :: head}" />
+
+<body>
+<header th:replace="~{fragments/header :: header}" />
+<!--=================================
+Vegas Slider Images
+=================================-->
+
+<ul class="vegas-slides hidden">
+  <li><img data-fade='2000' src="assets/img/BG/bg1.jpg" alt="" /></li>
+  <li><img data-fade='2000' src="assets/img/BG/bg2.jpg" alt="" /></li>
+  <li><img data-fade='2000' src="assets/img/BG/bg3.jpg" alt="" /></li>
+  <li><img data-fade='2000' src="assets/img/BG/bg4.jpg" alt="" /></li>
+</ul>
+
+<!--=================================
+JPlayer (Audio Player)
+=================================-->
+
+<section th:replace="fragments/player :: player" />
+
+<div id="ajaxArea">
+    <div class="pageContentArea">
+      <!--=================================
+      Home
+      =================================-->
+      <section id="home-slider">
+        <div class="container">
+          <div class="home-inner">
+
+            <div id="homeSliderNav" class="slider-nav"> 
+              <a id="home-prev" href="#" class="prev fa fa-chevron-left"></a>
+              <a id="home-next" href="#" class="next fa fa-chevron-right"></a>
+            </div><!--sliderNav-->
+            
+            <div id="flex-home" class="flexslider" data-animation="slide" data-animationSpeed="1000" data-autoPlay="true" data-slideshowSpeed="7000">
+              <ul class="slides">
+                <li> <img src="assets/img/mic4.jpg" alt="" >
+                  <div class="flex-caption">
+                    <h2>COMING SOON</h2>
+                  </div>
+                </li>
+                <li> <img src="assets/img/bible1.jpg" alt="" >
+                  <div class="flex-caption">
+                    <h2>TEMAS</h2>
+                  </div>
+                </li>
+                <li> <img src="assets/img/dicc.jpg" alt="" >
+                  <div class="flex-caption">
+                    <h2>DICCIONARIO</h2>
+                  </div>
+                </li>
+                <li> <img src="assets/img/bible-study.jpg" alt="" >
+                  <div class="flex-caption">
+                    <h2>BIBLE STUDY</h2>
+                  </div>
+                </li>
+                <li> <img src="assets/img/rvb.jpg" alt="" >
+                  <div class="flex-caption">
+                    <h2>REINA VALERA 1960</h2>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================
+      Player Wraper
+      =================================-->
+      <div class="rockPlayerHolder"></div>
+      <!--=================================
+      Latest Albumbs
+      =================================-->
+
+<!--      <section id="albums">-->
+<!--        <div class="container">-->
+<!--          <h1>Latest Albums</h1>-->
+<!--          <div class="top-carouselnav"> <a href="#" class="prev-album"><span class="fa fa-caret-left"></span></a> <a href="#" class="next-album"><span class="fa fa-caret-right"></span></a> </div>-->
+<!--          <div class="albums-carousel">-->
+<!--            <div class="album"> <img src="assets/img/albums/1.jpg" alt=""/>-->
+<!--              <div class="hover">-->
+<!--                <ul>-->
+<!--                  <li><a href="assets/img/albums/1.jpg" data-rel="prettyPhoto"><span class="fa fa-search"  ></span></a></li>-->
+<!--                  <li><a href="album-detail.html"><span class="fa fa-link"></span></a></li>-->
+<!--                </ul>-->
+<!--                <h3>Lorem Artist</h3>-->
+<!--                <h2>Album</h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;\\album&ndash;&gt;-->
+<!--            -->
+<!--            <div class="album"> <img src="assets/img/albums/2.jpg" alt=""/>-->
+<!--              <div class="hover">-->
+<!--                <ul>-->
+<!--                  <li><a href="assets/img/albums/2.jpg" data-rel="prettyPhoto"><span class="fa fa-search"  ></span></a></li>-->
+<!--                  <li><a href="album-detail.html"><span class="fa fa-link"></span></a></li>-->
+<!--                </ul>-->
+<!--                <h3>Lorem Artist</h3>-->
+<!--                <h2>Album</h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;\\album&ndash;&gt;-->
+<!--            -->
+<!--            <div class="album"> <img src="assets/img/albums/3.jpg" alt=""/>-->
+<!--              <div class="hover">-->
+<!--                <ul>-->
+<!--                  <li><a href="assets/img/albums/3.jpg" data-rel="prettyPhoto"><span class="fa fa-search"  ></span></a></li>-->
+<!--                  <li><a href="album-detail.html"><span class="fa fa-link"></span></a></li>-->
+<!--                </ul>-->
+<!--                <h3>Lorem Artist</h3>-->
+<!--                <h2>Album</h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;\\album&ndash;&gt;-->
+<!--            -->
+<!--            <div class="album"> <img src="assets/img/albums/4.jpg" alt=""/>-->
+<!--              <div class="hover">-->
+<!--                <ul>-->
+<!--                  <li><a href="assets/img/albums/4.jpg" data-rel="prettyPhoto"><span class="fa fa-search"  ></span></a></li>-->
+<!--                  <li><a href="album-detail.html"><span class="fa fa-link"></span></a></li>-->
+<!--                </ul>-->
+<!--                <h3>Lorem Artist</h3>-->
+<!--                <h2>Album</h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;\\album&ndash;&gt;-->
+<!--            -->
+<!--            <div class="album"> <img src="assets/img/albums/5.jpg" alt=""/>-->
+<!--              <div class="hover">-->
+<!--                <ul>-->
+<!--                  <li><a href="assets/img/albums/5.jpg" data-rel="prettyPhoto"><span class="fa fa-search"  ></span></a></li>-->
+<!--                  <li><a href="album-detail.html"><span class="fa fa-link"></span></a></li>-->
+<!--                </ul>-->
+<!--                <h3>Lorem Artist</h3>-->
+<!--                <h2>Album</h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;\\album&ndash;&gt;-->
+<!--            -->
+<!--            <div class="album"> <img src="assets/img/albums/6.jpg" alt=""/>-->
+<!--              <div class="hover">-->
+<!--                <ul>-->
+<!--                  <li><a href="assets/img/albums/6.jpg" data-rel="prettyPhoto"><span class="fa fa-search"  ></span></a></li>-->
+<!--                  <li><a href="album-detail.html"><span class="fa fa-link"></span></a></li>-->
+<!--                </ul>-->
+<!--                <h3>Lorem Artist</h3>-->
+<!--                <h2>Album</h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;\\album&ndash;&gt;-->
+<!--            -->
+<!--            <div class="album"> <img src="assets/img/albums/7.jpg" alt=""/>-->
+<!--              <div class="hover">-->
+<!--                <ul>-->
+<!--                  <li><a href="assets/img/albums/7.jpg" data-rel="prettyPhoto"><span class="fa fa-search"  ></span></a></li>-->
+<!--                  <li><a href="album-detail.html"><span class="fa fa-link"></span></a></li>-->
+<!--                </ul>-->
+<!--                <h3>Lorem Artist</h3>-->
+<!--                <h2>Album</h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;\\album&ndash;&gt;-->
+<!--            -->
+<!--            <div class="album"> <img src="assets/img/albums/8.jpg" alt=""/>-->
+<!--              <div class="hover">-->
+<!--                <ul>-->
+<!--                  <li><a href="assets/img/albums/8.jpg" data-rel="prettyPhoto"><span class="fa fa-search"  ></span></a></li>-->
+<!--                  <li><a href="album-detail.html"><span class="fa fa-link"></span></a></li>-->
+<!--                </ul>-->
+<!--                <h3>Lorem Artist</h3>-->
+<!--                <h2>Album</h2>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash;\\album&ndash;&gt; -->
+<!--            -->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </section>-->
+      <div class="clearfix"></div>
+      <!--=================================
+      Upcoming events
+      =================================-->
+
+      <section id="updates">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <h1>Upcoming Events</h1>
+              <div class="event-feed">
+                <div class="date"> <span class="day">24</span> <span class="month">AUG</span> </div>
+                <h5>Event</h5>
+                <p>at PNC Bank Arts Center</p>
+                <a class="btn" href="#">details</a>
+              </div>
+              <!--\\event-->
+
+              <div class="event-feed">
+                <div class="date"> <span class="day">26</span> <span class="month">AUG</span> </div>
+                <h5>Event2</h5>
+                <p>at PNC Bank Arts Center</p>
+                <a class="btn" href="#">details</a>
+              </div>
+              <!--\\event-->
+
+              <div class="event-feed">
+                <div class="date"> <span class="day">29</span> <span class="month">AUG</span> </div>
+                <h5>Events3</h5>
+                <p>at PNC Bank Arts Center</p>
+                <a class="btn" href="#">details</a>
+              </div>
+              <!--\\event-->
+            </div>
+            <!--latest events-->
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <h1>From Bucket</h1>
+                <audio controls  th:each="x : ${playlist}" style="width:100%;">
+                  <source th:src="${x}" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+
+              
+            </div>
+            <!--latest news-->
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <h1>Clock</h1>
+                <div class="container">
+
+                  <div class="middle" style="margin: auto;">
+                    <table>
+                      <tr>
+                        <td style="text-align: center;"><canvas id="canvas_tt63d59a37694d9" width="125"
+                                                                height="125"></canvas></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center; font-weight: bold"><a
+                                href="//24timezones.com/State-of-New-York/time" style="text-decoration: none"
+                                class="clock24"
+                                id="tz24-1674943031-su27-eyJzaXplIjoiMTUwIiwiYmdjb2xvciI6IjAwMDAwMCIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjNkNTlhMzc2OTRkOSJ9"
+                                title="Current time in New York" target="_blank" rel="nofollow">New York (USA)</a>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td style="text-align: center;"><canvas id="canvas_tt63d599edf2748" width="125"
+                                                                height="125"></canvas></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center; font-weight: bold"><a
+                                href="//24timezones.com/Santiago/time" style="text-decoration: none" class="clock24"
+                                id="tz24-1674942957-c1232-eyJzaXplIjoiMTUwIiwiYmdjb2xvciI6IjAwMDAwMCIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjNkNTk5ZWRmMjc0OCJ9"
+                                title="Current time in Santiago" target="_blank" rel="nofollow">Santiago (Chile)</a>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td style="text-align: center;"><canvas id="canvas_tt63d59a4d4c27c" width="125"
+                                                                height="125"></canvas></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center; font-weight: bold"><a
+                                href="//24timezones.com/Barcelona/time" style="text-decoration: none" class="clock24"
+                                id="tz24-1674943053-c131-eyJzaXplIjoiMTUwIiwiYmdjb2xvciI6IjAwMDAwMCIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjNkNTlhNGQ0YzI3YyJ9"
+                                title="Barcelona local time" target="_blank" rel="nofollow">Barcelona (Spain)</a></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+                </div>
+
+
+              </div>
+            </div>
+            <!--latest videos--> 
+          </div>
+        </div>
+      </section>
+    </div><!--pageContent-->
+</div><!--ajaxwrap-->    
+<!--=================================
+	Latest blog
+	=================================-->
+
+
+<!--=================================
+	Footer
+	=================================-->
+<footer th:replace="~{fragments/footer :: footer}" />
+
+
+<!--=================================
+Script Source
+=================================-->
+
+<th:block th:replace="~{fragments/footer :: scripts}" ></th:block>
+
+</body>
+</html>

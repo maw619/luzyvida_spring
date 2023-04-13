@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<![endif]-->
+
+
+<head th:fragment="head">
+  <meta charset="utf-8">
+  <title>LuzyVida</title>
+
+  <!--=================================
+  Meta tags
+  =================================-->
+  <meta name="description" content="">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" />
+
+  <!--=================================
+  Style Sheets
+  =================================-->
+  <script type="module" src="//samcloudmedia.spacial.com/webwidgets/widget/v6/sam-widgets/sam-widgets.esm.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.vegas.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/blue.css">
+  <!--
+  <link rel="stylesheet" type="text/css" href="assets/css/orange.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/red.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/green.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/purple.css">-->
+
+  <script async  src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script defer  src="assets/js/jquery.js"></script>
+
+</head>
+<body>
+
+
+
+<!--=================================
+	Header
+	=================================-->
+<header th:fragment="header">
+  <div class="social-links">
+    <div class="container">
+      <ul class="social">
+        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+        <li ><a href="#"><span class="fa fa-twitter"></span></a></li>
+        <li ><a href="#"><span class="fa fa-pinterest"></span></a></li>
+        <li ><a href="#"><span class="fa fa-linkedin"></span></a></li>
+        <li ><a href="#"><span class="fa fa-flickr"></span></a></li>
+        <li ><a href="#"><span class="fa fa-youtube"></span></a></li>
+        <li ><a href="#"><span class="fa fa-instagram"></span></a></li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar yamm navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle fa fa-navicon"></button>
+        <a class="navbar-brand" href="/">
+          <img src="assets/img/logo.png" width="60px" alt="logo" />
+        </a>
+      </div>
+      <div class="nav_wrapper">
+        <div class="nav_scroll">
+<!--          <div class="nav-search">-->
+<!--            <form>-->
+<!--              <input type="text" placeholder="Search" />-->
+<!--              <button type="submit"><i class="fa fa-search"></i></button>-->
+<!--            </form>-->
+<!--          </div>-->
+
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/temas">Temas</a></li>
+            <li><a href="/diccionario" >Diccionario</a></li>
+            <li><a href="/" >Bible Study</a></li>
+            <li><a href="/" >RV1960</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+
+      </div>
+    </div>
+  </nav>
+</header>
